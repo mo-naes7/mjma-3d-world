@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Amiri", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #19082b;
+    background-image:
+      radial-gradient(circle at 14% 18%, rgba(236, 72, 153, 0.36) 0%, transparent 46%),
+      radial-gradient(circle at 86% 16%, rgba(168, 85, 247, 0.35) 0%, transparent 48%),
+      radial-gradient(circle at 80% 85%, rgba(244, 114, 182, 0.3) 0%, transparent 46%),
+      linear-gradient(135deg, #180729 0%, #3d1157 38%, #821d68 74%, #c0357f 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+  }
+
+  h1, h2 {
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
