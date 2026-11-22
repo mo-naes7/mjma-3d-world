@@ -11,7 +11,7 @@ import {
   ShoppingBag
 } from "lucide-react";
 
-import { ErrorBoundary } from "./components/ErrorBoundary";
+
 import { Header } from "./components/Header";
 import { MerchantDashboard } from "./components/MerchantDashboard";
 import { OrderTrackerModal } from "./components/OrderTrackerModal";
@@ -924,11 +924,10 @@ function StorefrontApp() {
     </div>;
 }
 function App() {
-  return <ErrorBoundary>
+  return 
       <TranslationProvider>
         <StorefrontApp />
-      </TranslationProvider>
-    </ErrorBoundary>;
+      </TranslationProvider>;
 }
 export {
   App as default
