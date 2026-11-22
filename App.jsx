@@ -13,7 +13,7 @@ import {
 
 
 import { Header } from "./components/Header";
-import { MerchantDashboard } from "./components/MerchantDashboard";
+
 import { OrderTrackerModal } from "./components/OrderTrackerModal";
 import { ProductDetailModal } from "./components/ProductDetailModal";
 import { ProductRatingSummary } from "./components/ProductRatingSummary";
@@ -373,10 +373,7 @@ function StorefrontApp() {
         </div>}
 
       <main className="flex-1">
-        {view === "admin" ? <MerchantDashboard
-    settings={settings}
-    onBackToStore={() => setView("storefront")}
-  /> : <>
+        
             {
     /* Section 1: Storefront Hero */
   }
