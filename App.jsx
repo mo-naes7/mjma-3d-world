@@ -10,7 +10,7 @@ import {
   Search,
   ShoppingBag
 } from "lucide-react";
-import { CartDrawer } from "./components/CartDrawer";
+
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { Header } from "./components/Header";
 import { MerchantDashboard } from "./components/MerchantDashboard";
@@ -909,17 +909,7 @@ function StorefrontApp() {
     onAddToCart={handleAddToCart}
   />}
 
-      <CartDrawer
-    open={cartOpen}
-    items={cart}
-    settings={settings}
-    onClose={() => setCartOpen(false)}
-    onUpdateQuantity={handleUpdateCartQuantity}
-    onRemoveItem={handleRemoveCartItem}
-    onClearCart={() => setCart([])}
-    onOrderCreated={handleOrderCreated}
-  />
-
+      
       <OrderTrackerModal
     open={trackerOpen}
     currency={settings.currency}
