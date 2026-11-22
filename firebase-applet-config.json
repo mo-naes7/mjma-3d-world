@@ -1,0 +1,9 @@
+{
+  "apiKey": "AIzaSyDummyKeyForBuildValidationOnly123456",
+  "authDomain": "mjma-3d-world.firebaseapp.com",
+  "projectId": "mjma-3d-world",
+  "storageBucket": "mjma-3d-world.appspot.com",
+  "messagingSenderId": "123456789012",
+  "appId": "1:123456789012:web:abcdef1234567890",
+  "firestoreDatabaseId": "(default)"
+}
